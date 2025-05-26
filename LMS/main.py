@@ -1,10 +1,3 @@
-from library import Library, Book, User
-
-import os
-print(os.listdir())
-
-
-
 # Setup
 library = Library()
 book1 = Book("1984", "George Orwell", "123")
@@ -13,6 +6,7 @@ library.add_book(book1)
 library.add_book(book2)
 
 user = User("Alice")
+
 
 library.list_books()
 
@@ -23,3 +17,6 @@ library.list_books()
 
 user.return_book(book1)
 library.list_books()
+
+
+

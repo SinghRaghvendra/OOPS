@@ -1,16 +1,15 @@
-
-
-
 class Book:
-    def __init__(self, title, author, year, isbn):
+    def __init__(self, title, author, year):
         self.title = title
         self.author = author
         self.year = year
-        self.isbn = isbn
-        self.is_available = True
+        self.is_available = True  # Initially, the book is available
+        
+        
+        
         
     def __str__(self):
-        return f"{self.title} by {self.author} ({self.year}) - ISBN: {self.isbn} - {'Available' if self.is_available else 'Checked Out'}"
+        return f"{self.title} by {self.author} ({self.year}) - {'Available' if self.is_available else 'Checked Out'}"
     
     
 class User:
