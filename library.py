@@ -1,4 +1,4 @@
-print("Welcome to AI COUNCEL LIBRARY")
+
 
 
 class Book:
@@ -53,6 +53,10 @@ class Library:
             print(f"{book.title} ({status})")
 
 
+print("Library system initialized.")
+print("Welcome to AI COUNCEL LIBRARY")
+
 
             
-   
+import os
+print(os.listdir())
